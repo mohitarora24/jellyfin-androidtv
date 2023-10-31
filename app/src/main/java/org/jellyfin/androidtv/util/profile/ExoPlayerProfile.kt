@@ -78,7 +78,7 @@ class ExoPlayerProfile(
 				}.joinToString(",")
 				audioCodec = when {
 					Utils.downMixAudio(context) -> downmixSupportedAudioCodecs
-					else -> allSupportedAudioCodecsWithoutFFmpegExperimental
+					else -> allSupportedAudioCodecs
 				}.joinToString(",")
 				protocol = "hls"
 				copyTimestamps = false
